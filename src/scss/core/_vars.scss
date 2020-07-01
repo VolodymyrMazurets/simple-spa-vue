@@ -1,0 +1,101 @@
+// Natural/Dark
+$ND1: #0d1523;
+$ND2: #141c29;
+$ND3: #1a1f2f;
+$ND4: #1e2634;
+$ND5: #252b39;
+$ND6: #2e3340;
+$ND7: #373c49;
+$ND8: #3d434e;
+$ND9: #494e59;
+$ND10: #5d626b;
+
+// Natural/Light
+
+$NL1: #8993a3;
+$NL2: #97a0ae;
+$NL3: #a5adb9;
+$NL4: #b3bac5;
+$NL5: #c1c7d0;
+$NL6: #dfe1e5;
+$NL7: #ebecf0;
+$NL8: #f4f5f7;
+$NL9: #fafbfc;
+$NL10: #ffffff;
+
+// Primary
+$P0: #2153d1;
+$P1: #0065ff;
+$P2: #1a74ff;
+$P3: #3384ff;
+$P4: #4d93ff;
+$P5: #66a3ff;
+$P6: #80b2ff;
+$P7: #99c1ff;
+$P8: #b3d1ff;
+$P9: #cce0ff;
+$P10: #e5f0ff;
+
+// Green
+$G1: #36b37e;
+$G2: #47c791;
+$G3: #b8ead5;
+
+// Orange
+$O1: #ea9938;
+$O2: #eda753;
+$O3: #f8ddbd;
+
+// Red
+$R1: #ff5230;
+$R2: #ff694c;
+$R3: #ffc5ba;
+
+// Yellow
+$Y1: #ffe380;
+$Y2: #ffe999;
+$Y3: #fff9e6;
+
+// Others
+$placeholder: #aaaaaa;
+$disabled-input: #F7F9FC;
+
+/* ---FONT SIZE--- */
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$H36: calcRem(36px);
+$H32: calcRem(32px);
+$H28: calcRem(28px);
+$H20: calcRem(20px);
+$H18: calcRem(18px);
+$H16: calcRem(16px);
+$H15: calcRem(15px);
+$H14: calcRem(14px);
+$H12: calcRem(12px);
+$H11: calcRem(11px);
+$H10: calcRem(10px);
+$H9: calcRem(9px);
+$H8: calcRem(8px);
+
+/* Screens */
+$screen-iphone-5: 320px;
+$screen-iphone-6: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet-small: 600px;
+$screen-tablet: 768px;
+$screen-tablet-large: 860px;
+$screen-netbook: 960px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;
+
+// FONTS
+$base-font: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', sans-serif;
+$sec-font: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', sans-serif;

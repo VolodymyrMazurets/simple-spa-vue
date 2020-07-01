@@ -1,32 +1,47 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="app">
+    <div class="app__nav">
+      <router-link to="/">
+        <a-button :type="getButtonType('Cats')">Cats</a-button>
+      </router-link>
+      <router-link to="/about">
+        <a-button :type="getButtonType('About')">About</a-button>
+      </router-link>
     </div>
-    <router-view/>
+    <div class="app__content">
+      <router-view />
+    </div>
   </div>
 </template>
+<script>
+export default {
+  name: 'App',
+  methods: {
+    getButtonType(routeName) {
+      return this.$route.name === routeName ? 'danger' : 'primary';
+    },
+  },
+};
+</script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+.app {
+  height: 100vh;
+  &__nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    @include flex(center, center, column);
+    border-right: 1px solid #c3c3c3;
+    & > *:not(:last-child) {
+      margin-bottom: 16px;
     }
+  }
+  &__content {
+    padding: 24px 24px 24px 224px;
+    min-height: 200vh;
   }
 }
 </style>

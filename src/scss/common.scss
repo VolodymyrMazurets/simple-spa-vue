@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
+    scrollbar-color: $P1 var(--secondary-button-bg);
+    scrollbar-width: thin;
+    ::-webkit-scrollbar {
+      width: 2px;
+      border-radius: 1px;
+      min-width: 2px;
+      background: var(--secondary-button-bg);
+      height: 2px;
+    }
+    ::-webkit-scrollbar-thumb {
+      width: 2px;
+      border-radius: 1px;
+      min-width: 2px;
+      background: $P1;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--secondary-button-bg);
+    }
+  }
+  
+  body,
+  input,
+  a,
+  button,
+  textarea {
+    font-family: $base-font;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  code,
+  pre {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+  
+  .hidden-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+  }
+  
+  .rotate-icon {
+    transform: rotateX(180deg);
+  }
+  
