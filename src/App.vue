@@ -1,11 +1,8 @@
 <template>
   <div id="app" class="app">
     <div class="app__nav">
-      <router-link to="/">
-        <a-button :type="getButtonType('Cats')">Cats</a-button>
-      </router-link>
-      <router-link to="/about">
-        <a-button :type="getButtonType('About')">About</a-button>
+      <router-link v-for="link in routes" :key="link.name" :to="link.path">
+        <a-button :type="getButtonType(link.name)">{{link.name}}</a-button>
       </router-link>
     </div>
     <div class="app__content">
@@ -16,6 +13,24 @@
 <script>
 export default {
   name: 'App',
+  data() {
+    return {
+      routes: [
+        {
+          path: '/',
+          name: 'Cats',
+        },
+        {
+          path: '/about',
+          name: 'About',
+        },
+        {
+          path: '/beer',
+          name: 'Beer',
+        },
+      ]
+    }
+  },
   methods: {
     getButtonType(routeName) {
       return this.$route.name === routeName ? 'danger' : 'primary';
