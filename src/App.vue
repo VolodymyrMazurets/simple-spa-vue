@@ -25,8 +25,8 @@ export default {
           name: 'About',
         },
         {
-          path: '/beer',
-          name: 'Beer',
+          path: '/dogs',
+          name: 'Dogs',
         },
       ]
     }

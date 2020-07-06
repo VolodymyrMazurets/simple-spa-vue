@@ -1,0 +1,9 @@
+// dogs
+export const DOGS_BREED_UPDATE = 'dogs/DOGS_BREED_UPDATE';
+export const DOGS_BREED_REQUEST = 'dogs/DOGS_BREED_REQUEST';
+export const DOGS_BREED_CLEAR_STATE= 'dogs/DOGS_BREED_CLEAR_STATE';
+
+//cats
+export const CATS_BREED_UPDATE = 'cats/CATS_BREED_UPDATE';
+export const CATS_BREED_REQUEST = 'cats/CATS_BREED_REQUEST';
+export const CATS_BREED_CLEAR_STATE= 'cats/CATS_BREED_CLEAR_STATE';
